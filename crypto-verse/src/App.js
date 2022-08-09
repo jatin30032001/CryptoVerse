@@ -1,33 +1,17 @@
 
 import {BrowserRouter ,Route ,Routes} from "react-router-dom"
 import './App.css';
-import Header from "./Components/Header";
-import HomePage from "./Pages/HomePage";
-import CoinPage from "./Pages/CoinPage";
-import{makeStyles} from "@mate"
+
+import * as React from 'react';
 
 
 
 function App() {
-
-
- 
-
-
   return (
 
-<BrowserRouter>
-<div className ="App">
-<Header/>
-      <Routes>
-
-        <Route exact path ='/' element = {<HomePage/>}></Route>
-        <Route exact path ='/coins/:id' element = {<CoinPage/>}></Route>
-         
-
-      </Routes>
+<div className>
+  Hell world
       </div>
-    </BrowserRouter>
    
 
   );
