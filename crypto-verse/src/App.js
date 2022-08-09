@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter ,Route ,Routes , Link} from "react-router-dom";
 import {Layout , Typography , Space} from 'antd';
 import * as React from 'react';
-import Navbar from './Components/Navbar';
+import Navbar  from './Components/Navbar';
 
 
 
