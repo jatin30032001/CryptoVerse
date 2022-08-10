@@ -2,30 +2,38 @@
 import './App.css';
 import {BrowserRouter ,Route ,Routes , Link} from "react-router-dom";
 import {Layout , Typography , Space} from 'antd';
-import * as React from 'react';
+import  React from 'react';
 import Navbar  from './Components/Navbar';
+import { Router} from "react-router-dom";
 
 
 
 function App() {
   return (
-
-<div className>
+ 
+    <BrowserRouter>
+    <Router>
+<div className="app">
  <div className="navbar">
-
-     <Navbar/>
+ <Route exact path='/'> 
+  <Navbar/>
+ </Route>
+    
  </div>
- <div className="main">
+ {/* <div className="main">
 
  </div>
 
 
 <div className="footer">
 
-</div>
+</div> */}
 
 
       </div>
+      </Router>
+
+  </BrowserRouter>
    
 
   );
